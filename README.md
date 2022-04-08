@@ -78,3 +78,8 @@ There are a number of recommendations for further development, including:
 
 - Determining what percentage of trips are "one way" (beginning and ending at different locations) versus "round trip" (beginning and ending at the same location).
 
+## Link to Tableau Public
+
+The Tableau Story can be found at:
+[link to dashboard](https://public.tableau.com/app/profile/erin.polhemus/viz/Module_14_Challenge_16494536696590/CitbikeStory)
+
