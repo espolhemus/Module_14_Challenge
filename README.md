@@ -2,10 +2,10 @@
 Module 14 Challenge - CitiBike NYC Analysis
 
 ## Overview of Project
-This project involves using Tableau to analyze data related to a bike sharing program in NYC and create visualizations and a Tableau Story to commicate those findings. 
+This project involves using Tableau to analyze data related to a bike sharing program in NYC and create visualizations and a Tableau Story to communicate those findings. 
 
 ### Purpose
-The purpose of this challenge is to take a CSV file containing data related to the NYC Citi Bike bike sharing program (from August, 2019) and to analyze that data and present analysis and visualizations that would help to inform and persuade potential investors considering launcing a similar bike sharing program in Des Moines, Iowa. 
+The purpose of this challenge is to take a CSV file containing data related to the NYC Citi Bike bike-sharing program (from August, 2019) and to analyze that data and present analysis and visualizations that would help to inform and persuade potential investors considering launching a similar bike sharing program in Des Moines, Iowa. 
 
 ## Analysis
 The results of efforts are as follows:
@@ -24,38 +24,57 @@ The results of efforts are as follows:
 ![Table by Ending Location](/Images/Image005.png)
 ![Bubble Chart by Ending Location](/Images/Image006.png)
 
-As one would expect, the most densely populated areas of Manhattan (specifically the Midtown area) accounted for the the overwhelming majority of rides.   
- 
-### Filtering by User Specified Criteria
+- As one would expect, the most densely populated areas of Manhattan (specifically the Midtown area) accounted for the overwhelming majority of rides.   
 
-- In order to filter the dataset based on user-specified criteria, the user can enter values into one or more than one of the following fields:
+### Trips by Date, Day of Week, and Time of Day, Aggregated and Broken Out by Gender
 
-![Filter Criteria](/images/filter_criteria.png)
+- The following visualization shows the distribution of trips over the course of the month:
 
-- In order to apply the user-specified criteria, the user simply enters a value into the text box, and then applies the criteria by pressing Enter, Tab, or by using their mouse to click within a different field.  The user can enter multiple filter criteria - however, in order to remove the filters which have been applied, the user must reload the HTML page.
+![Trips by Date](/Images/Image007.png)
 
-### Results of User-Specified Search
+- The data shows strong ridership throughout the course of the month, with only two days have a total trip count of fewer than 60,000 trips.
 
-- The results of a user-specified search appear as follows:
- 
-![Post Filter](/images/post_filter.png)
+- The following visualizations depict the number of trips taken by day of week and time of day, both in aggregate and broken out by gender, and also parsed by user type:
 
-## Summary of Analysis
- 
-### Drawbacks
+![Heatmap by Day and Time](/Images/Image008.png)
+![Heatmap by Day and Time by Gender](/Images/Image009.png)
+![Heatmap by Day Time Gender and User Type](/Images/Image010.png)
 
-- The simplistic approach that was taken in developing this solution has resulted in a number of significant drawbacks - in particular, the search criteria is case-sensitive, which is a significant limitation and impediment impacting the utility of the solution, and the fact that the user must reload the page in order to clear any previously-applied filter criteria is likely to result in significant user frustration, and a negative perception of the site. 
+Unsurprisingly, the peak periods for ridership tend to be during the morning and evening rush hour commuting periods - however, ridership is remarkably strong and consistent throughout the course of the day on Saturdays and Sundays.  With regards to ridership by gender, Men make up the overwhelming majority of riders - however, the time of day trends appear to be similar across all genders.  With respect to ridership by Customer Status, non-Subscribers (referred to as Customers in the data) seem to concentrate the majority of their trips on the weekends 
+
+### Trips by Duration, Aggregated and Broken Out by Gender
+
+- The following visualization shows the distribution of rides by duration:
+
+![Rides by Duration](/Images/Image011.png)
+
+- A remarkable number of trips have a duration of 5 minutes or less, and there are very few trips with a duration of 30 minutes or more.
+
+- The following visualization shows the distribution of rides by duration, broken out by gender:
+
+![Rides by Duration and Gender](/Images/Image012.png)
+
+- The data show similar trends in trip duration regardless of gender.
+
+### Number of Rides by BikeID
+
+- The following visualization shows number of rides associated with each BikeID:
+
+![Rides by BikeID](/Images/Image013.png)
+
+- As evidenced by the visualization, there are significant disparities in the number of rides taken by BikeID.
 
 ### Recommendations for Further Development
 
 There are a number of recommendations for further development, including:
 
-- Adding the ability to sort the resulting table based on the column headings.
+- Attempting to determine whether there is excess bike inventory in certain locations at certain times, and insufficient inventory at other locations.
 
-- Adding a button to enable the user to clear existing filters and restore the entire corpus of data without having to reload the page.
+- Quantifying the total time spent on trips by BikeID, to determine maintenance needs.
 
-- Adding functionality to enable searches to be executed regardless of the case of the input values and the values within the dataset.
+- Binning of locations based on the number of trips beginning and ending at specific locations, in an effort to identify those locations that may not be financially viable.
 
-- Converting certain of the text boxes (e.g. "Country", "Shape") into dropdown menus containing a list of the values that are actually present in the dataset.
+- Building metrics to determine the length of time that a BikeID went between rides, to determine when bikes should be repositioned between various stations.
 
-- Enabling date-based searches to be performed for periods of time other than a single day (e.g. for an entire month).
+- Determining what percentage of trips are "one way" (beginning and ending at different locations) versus "round trip" (beginning and ending at the same location).
+
