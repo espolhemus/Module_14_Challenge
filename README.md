@@ -14,15 +14,15 @@ The results of efforts are as follows:
 
 - The following visualizations depict the number of trips begun at each of the various locations:
 
-![Heatmap by Starting Location](/Images/Image_001.png)
-![Table by Starting Location](/Images/Image_002.png)
-![Bubble Chart by Starting Location](/Images/Image_003.png)
+![Heatmap by Starting Location](/Images/Image001.png)
+![Table by Starting Location](/Images/Image002.png)
+![Bubble Chart by Starting Location](/Images/Image003.png)
 
 - The following visualizations depict the number of trips ending at each of the various locations:
 
-![Heatmap by Ending Location](/Images/Image_004.png)
-![Table by Ending Location](/Images/Image_005.png)
-![Bubble Chart by Ending Location](/Images/Image_006.png)
+![Heatmap by Ending Location](/Images/Image004.png)
+![Table by Ending Location](/Images/Image005.png)
+![Bubble Chart by Ending Location](/Images/Image006.png)
 
 As one would expect, the most densely populated areas of Manhattan (specifically the Midtown area) accounted for the the overwhelming majority of rides.   
  
